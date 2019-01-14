@@ -153,8 +153,6 @@ func (c *Compiler) parseOok(peek bool) (InsType, error) {
 					first = c.code[peekPosition]
 					continue
 				}
-			case ' ':
-				continue
 			default:
 				return ookIns, fmt.Errorf("Ook contained bad character at position %d", peekPosition)
 			}
